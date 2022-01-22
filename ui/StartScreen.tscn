@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui/StartScreen.gd" type="Script" id=2]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://assets/Unique.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 64
+font_data = SubResource( 2 )
+
+[node name="StartScreen" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 477.0
+margin_bottom = 74.0
+theme = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Escape the Maze!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 37.0
+margin_top = 157.0
+margin_right = 435.0
+margin_bottom = 231.0
+theme = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Press <space>"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreNotice" type="Label" parent="."]
+margin_left = 341.0
+margin_top = 473.0
+margin_right = 739.0
+margin_bottom = 547.0
+theme = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
